@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    width: 100%;
+    height: 100px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    background-color: #242222;
+  }
+  header .wrapper {
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    height: 100%;
+  }
+  header .wrapper-logo {
+    width: 100px;
+    height: 100px;
+  }
+  header .wrapper-logo img {
+    width: 100%;
+    height: 100%;
+  }
+  header .wrapper-hamburger {
+    width: 50px;
+    height: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  header .wrapper-hamburger span {
+    border: 2px solid #000;
+  }
+  header .nav {
+    position: absolute;
+    left: 50px;
+    transform: translateX(-50px) translateY(-100px);
+    z-index: 10;
+    background: none;
+    text-decoration: none;
+    text-align: center;
+  }
+
+/* Postavljamo početni izgled slike */
+img {
+    max-width: 100%; ;/* Održava proporcije slike */
+    display: block; /* Čini da slika bude centrirana */
+    margin: 0 auto; /* Centrira sliku */
+  }
+  
+  /* Media query za smanjivanje slike i premještanje na sredinu na manjim ekranima */
+  @media (max-width: 476px) {
+    img {
+      max-width: 80%; /* Možete prilagoditi veličinu slike prema vašim potrebama */
+      transform: translateX(-50%); /* Premješta sliku na sredinu */
+      position: relative; /* Potrebno za transformaciju */
+      left: 40%; /* Pomiče sliku 50% udesno */
+      justify-content: center;
+      display: flex;
+      text-align: center;
+    }
+  }
+  
+
+  
